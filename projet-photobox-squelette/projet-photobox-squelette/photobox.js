@@ -1,6 +1,5 @@
 import photoloader from "./lib/photoloader.js";
-import ui from "./lib/ui.js";
-import {config} from "./lib/config.js";
+import gallery_ui from "./lib/gallery_ui.js";
 
 document.querySelector('#load_gallery')
     .addEventListener('click', e => {
@@ -8,14 +7,7 @@ document.querySelector('#load_gallery')
     })
 
 const getGalery = function (uri) {
-    // photoloader.loadPicture(id).then(photoDetail => {
-    //     console.log("Titre : " + photoDetail.photo.titre);
-    //     console.log("Type : " + photoDetail.photo.type);
-    //     console.log("URL : " + photoDetail.photo.url.href);
-    // })
     let promesse = photoloader.loadRessource(uri);
-    let promesse2 = photoloader.loadPicture(102);
-    promesse.then(ui.displayPicture);
+    promesse.then(gallery_ui.displayPicture);
     console.log(promesse);
-    console.log(promesse2);
 }
