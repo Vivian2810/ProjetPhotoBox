@@ -8,6 +8,6 @@ document.querySelector('#load_gallery')
 
 const getGalery = function (uri) {
     let promesse = photoloader.loadRessource(uri);
-    promesse.then(gallery_ui.displayPicture);
+    promesse.then(gallery_ui.display_gallery);
     console.log(promesse);
 }
