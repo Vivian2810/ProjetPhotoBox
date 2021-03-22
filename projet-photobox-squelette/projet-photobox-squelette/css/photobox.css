@@ -121,9 +121,23 @@ nav #next {
     max-width: 100%;
 
 }
+
 #lightbox-head {
     height: 8%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     color: floralwhite;
 }
+#lightbox_close{
+    font-size: x-large;
+    font-family: "Lucida Console";
+    margin-left: 5%;
+    color: red;
+}
+
+#lightbox_title{
+    font-size: xx-large;
+    font-family: "Footlight MT Light";
+
+}
+
